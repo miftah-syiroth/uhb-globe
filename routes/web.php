@@ -2,13 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',function(){
-    return redirect()->route('login');
+Route::livewire('/', 'pages::welcome');
+
+Route::prefix('english-education')->group(function(){
+    Route::livewire('/', 'pages::english-education.index');
 });
 
-// route authenticated
-Route::middleware('auth')->group(function () {
-    Route::livewire('/dashboard', 'pages::users.index');
+Route::prefix('social-humanities')->group(function(){
+    Route::livewire('/', 'pages::social-humanities.index');
 });
 
 

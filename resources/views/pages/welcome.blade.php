@@ -20,20 +20,26 @@ new #[Layout('layouts::guest')] class extends Component {
                 <p class="hero-description">
                     Universitas Harapan Bangsa, Purwokerto, Indonesia
                 </p>
-                <div class="mt-4 d-flex gap-4 justify-content-center">
-                    <div class="card">
-                        <a href="" class="text-decoration-none">
-                            <div class="card-body">
-                                <h5 class="card-title">English Language Education for Sustainable Futures: Technology, Culture, and Global Competence</h5>
-                            </div>
-                        </a>
+                <div class="mt-4 row g-4 justify-content-center">
+                    <div class="col-sm-6 col-md-6 col-12">
+                        <div class="card">
+                            <a href="" class="text-decoration-none">
+                                <div class="card-body">
+                                    <h5 class="card-title">English Language Education for Sustainable Futures:
+                                        Technology, Culture, and Global Competence</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="card">
-                        <a href="" class="text-decoration-none">
-                            <div class="card-body">
-                                <h5 class="card-title">Social Humanities: Economics, Management, and Law in Global Contexts</h5>
-                            </div>
-                        </a>
+                    <div class="col-sm-6 col-md-6 col-12">
+                        <div class="card">
+                            <a href="" class="text-decoration-none">
+                                <div class="card-body">
+                                    <h5 class="card-title">Social Humanities: Economics, Management, and Law in Global
+                                        Contexts</h5>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

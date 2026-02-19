@@ -45,7 +45,7 @@ class FortifyServiceProvider extends ServiceProvider
             return Limit::perMinute(5)->by($request->session()->get('login.id'));
         });
 
-        $this->configureViews();
+        // $this->configureViews();
     }
 
     private function configureViews(): void
