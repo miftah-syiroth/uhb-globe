@@ -10,43 +10,26 @@ new #[Layout('layouts::english-education')] class extends Component {
 
 <div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="{{ asset('assets/ele') }}/logo-uhb.png" alt="GLOBE 2026 Logo" />
-                GLOBE 2026
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#theme">Theme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#dates">Important Dates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#registration">Registration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#papers">Call for Papers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <x-layouts::partials.guest.header>
+        <li class="nav-item">
+            <a class="nav-link" href="#about" data-section="about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#theme" data-section="theme">Theme</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#dates" data-section="dates">Important Dates</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#registration" data-section="registration">Registration</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#papers" data-section="papers">Call for Papers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+        </li>
+    </x-layouts::partials.guest.header>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -76,61 +59,71 @@ new #[Layout('layouts::english-education')] class extends Component {
 
             <div class="row co-host-row">
                 <div class="col-lg co-host-col mb-4">
-                    <div class="co-host-card">
-                        <div class="co-host-logo">
-                            <img src="{{ asset('assets/ele') }}/logo-uhb.png" alt="Universitas Harapan Bangsa" />
+                    <a href="https://uhb.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele') }}/logo-uhb.png" alt="Universitas Harapan Bangsa" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Universitas Harapan Bangsa</h6>
+                                <p class="co-host-location">Purwokerto, Indonesia</p>
+                            </div>
                         </div>
-                        <div class="co-host-info">
-                            <h6 class="co-host-name">Universitas Harapan Bangsa</h6>
-                            <p class="co-host-location">Purwokerto, Indonesia</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg co-host-col mb-4">
-                    <div class="co-host-card">
-                        <div class="co-host-logo">
-                            <img src="{{ asset('assets/ele') }}/logo-unu.png" alt="Universitas Nahdlatul Ulama" />
+                    <a href="https://unukalbar.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele') }}/logo-unu.png" alt="Universitas Nahdlatul Ulama" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Universitas Nahdlatul Ulama</h6>
+                                <p class="co-host-location">Kalimantan Selatan, Indonesia</p>
+                            </div>
                         </div>
-                        <div class="co-host-info">
-                            <h6 class="co-host-name">Universitas Nahdlatul Ulama</h6>
-                            <p class="co-host-location">Kalimantan Selatan, Indonesia</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg co-host-col mb-4">
-                    <div class="co-host-card">
-                        <div class="co-host-logo">
-                            <img src="{{ asset('assets/ele') }}/logo-umko.png" alt="Universitas Muhammadiyah" />
+                    <a href="https://www.umko.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele') }}/logo-umko.png" alt="Universitas Muhammadiyah" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Universitas Muhammadiyah</h6>
+                                <p class="co-host-location">Kotabumi, Indonesia</p>
+                            </div>
                         </div>
-                        <div class="co-host-info">
-                            <h6 class="co-host-name">Universitas Muhammadiyah</h6>
-                            <p class="co-host-location">Kotabumi, Indonesia</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg co-host-col mb-4">
-                    <div class="co-host-card">
-                        <div class="co-host-logo">
-                            <img src="{{ asset('assets/ele') }}/logo-poltesa.png" alt="Politeknik Negeri Sambas" />
+                    <a href="https://poltesa.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele') }}/logo-poltesa.png" alt="Politeknik Negeri Sambas" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Politeknik Negeri Sambas</h6>
+                                <p class="co-host-location">Sambas, Indonesia</p>
+                            </div>
                         </div>
-                        <div class="co-host-info">
-                            <h6 class="co-host-name">Politeknik Negeri Sambas</h6>
-                            <p class="co-host-location">Sambas, Indonesia</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg co-host-col mb-4">
-                    <div class="co-host-card">
-                        <div class="co-host-logo">
-                            <img src="{{ asset('assets/ele') }}/logo-untan.png" alt="Universitas Tanjungpura" />
+                    <a href="https://www.untan.ac.id/program-doktor/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele') }}/logo-untan.png" alt="Universitas Tanjungpura" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Doctoral Program of Education Universitas Tanjungpura
+                                </h6>
+                                <p class="co-host-location">Pontianak, Indonesia</p>
+                            </div>
                         </div>
-                        <div class="co-host-info">
-                            <h6 class="co-host-name">
-                                Doctoral Program of Education Universitas Tanjungpura
-                            </h6>
-                            <p class="co-host-location">Pontianak, Indonesia</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -291,8 +284,8 @@ new #[Layout('layouts::english-education')] class extends Component {
                     <div class="speaker-card">
                         <img src="{{ asset('assets/ele') }}/logo-uum.png" alt="Logo" class="speaker-logo" />
                         <div class="speaker-photo w-100">
-                            <img src="{{ asset('assets/ele') }}/keynote01.png" alt="Prof. Madya Dr. Hishamudin bin Isam"
-                                style="height: 200px" />
+                            <img src="{{ asset('assets/ele') }}/keynote01.png"
+                                alt="Prof. Madya Dr. Hishamudin bin Isam" style="height: 200px" />
                         </div>
                         <div class="speaker-info">
                             <h5 class="speaker-name pb-0">
@@ -305,9 +298,11 @@ new #[Layout('layouts::english-education')] class extends Component {
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="speaker-card">
-                        <img src="{{ asset('assets/ele') }}/logo-lu.png" alt="Lucknow University" class="speaker-logo" />
+                        <img src="{{ asset('assets/ele') }}/logo-lu.png" alt="Lucknow University"
+                            class="speaker-logo" />
                         <div class="speaker-photo w-100">
-                            <img src="{{ asset('assets/ele') }}/keynote02.png" alt="Prof. R. P. Singh" style="height: 200px" />
+                            <img src="{{ asset('assets/ele') }}/keynote02.png" alt="Prof. R. P. Singh"
+                                style="height: 200px" />
                         </div>
                         <div class="speaker-info">
                             <h5 class="speaker-name">Prof. R. P. Singh</h5>
@@ -320,7 +315,8 @@ new #[Layout('layouts::english-education')] class extends Component {
                         <img src="{{ asset('assets/ele') }}/logo-su.svg" alt="Superior University, Pakistan"
                             class="speaker-logo" />
                         <div class="speaker-photo w-100">
-                            <img src="{{ asset('assets/ele') }}/keynote04.png" alt="Zohaib Hassan Sain" style="height: 200px" />
+                            <img src="{{ asset('assets/ele') }}/keynote04.png" alt="Zohaib Hassan Sain"
+                                style="height: 200px" />
                         </div>
                         <div class="speaker-info">
                             <h5 class="speaker-name">Zohaib Hassan Sain</h5>
@@ -870,7 +866,198 @@ new #[Layout('layouts::english-education')] class extends Component {
     <section class="section">
         <div class="container">
             <h2 class="section-title">Co-Hosts</h2>
-            <p class="section-subtitle text-warning">To be confirmed</p>
+            <p class="section-subtitle text-warning">Official Co-Hosts</p>
+
+            <div class="row co-host-row">
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.uum.edu.my/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-uum.png') }}" alt="Universitas Utara Malaysia" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Universiti Utara Malaysia</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.lkouniv.ac.in/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-lu.png') }}" alt="Lucknow University" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Lucknow University</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.superior.edu.pk/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-su.svg') }}" alt="Superior University" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">Superior University</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.national-u.edu.ph/nu-fairview/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-nuf.png') }}" alt="National University Fairview" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">National University Fairview</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.vlu.edu.vn/en" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele') }}/logo-untan.png" alt="International Education Institute, Van Lang University" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    International Education Institute, Van Lang University
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.uj.ac.za/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-uj.png') }}" alt="University Of Johannesburg" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    University Of Johannesburg
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://kasu.edu.ng/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-kasu.png') }}" alt="Kaduna State University" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Kaduna State University
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://umpo.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-umpo.png') }}" alt="Universitas Muhammadiyah Ponorogo" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas Muhammadiyah Ponorogo
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://unisda.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-unisda.png') }}" alt="Universitas Islam Darul 'Ulum Lamongan" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas Islam Darul 'Ulum Lamongan
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://untagsmg.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-17.png') }}" alt="Universitas 17 Agustus 1945" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas 17 Agustus 1945 Semarang
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://unma.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-umaja.png') }}" alt="Universitas Majalengka" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas Majalengka
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://www.unwir.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-unwir.png') }}" alt="Universitas Wiralodra" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas Wiralodra
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://uniska-bjm.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-uniska.png') }}" alt="Universitas Islam Kalimantan Muhammad Arsyad Al Banjari" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas Islam Kalimantan Muhammad Arsyad Al Banjari
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 co-host-col mb-4">
+                    <a href="https://ustjogja.ac.id/" target="_blank" class="text-decoration-none">
+                        <div class="co-host-card">
+                            <div class="co-host-logo">
+                                <img src="{{ asset('assets/ele/logo-ust.png') }}" alt="universitas sarjanawiyata tamansiswa" />
+                            </div>
+                            <div class="co-host-info">
+                                <h6 class="co-host-name">
+                                    Universitas Sarjanawiyata Tamansiswa
+                                </h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 

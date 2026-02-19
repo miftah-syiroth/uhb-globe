@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     color: var(--text-dark);
@@ -51,6 +55,35 @@ body {
 .nav-link:hover,
 .nav-link.active {
     color: var(--secondary-color) !important;
+}
+
+.dropdown-item.nav-link-dropdown.active {
+    color: var(--secondary-color) !important;
+    font-weight: 600;
+}
+
+/* Card unavailable / disabled state */
+.card-unavailable {
+    opacity: 0.85;
+    filter: grayscale(0.4);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.card-unavailable .card-title,
+.card-unavailable .card-text {
+    color: var(--text-light) !important;
+}
+
+.card-unavailable-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--text-light);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.35rem 0.65rem;
 }
 
 .hero-section {
