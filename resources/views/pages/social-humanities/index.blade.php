@@ -371,7 +371,6 @@ new #[Layout('layouts::social-humanities')] class extends Component {
         </div>
     </section>
 
-    <!-- Registration Fee Section -->
     <section id="registration" class="section bg-light-custom">
         <div class="container">
             <h2 class="section-title">Registration Fee</h2>
@@ -442,7 +441,9 @@ new #[Layout('layouts::social-humanities')] class extends Component {
             </div>
 
             <div class="text-center mt-4">
-                <a target="_blank" href="https://bit.ly/1stGLOBE_2026"
+                <a target="_blank" href="https://bit.ly/1stGLOBE_Participant"
+                class="btn-primary-custom btn-lg text-white">Participant Only</a>
+                <a target="_blank" href="https://bit.ly/1stGLOBE_SocialHumanities"
                     class="btn-primary-custom btn-lg text-white">Register Now</a>
             </div>
         </div>
