@@ -70,7 +70,7 @@ new #[Layout('layouts::english-education')] class extends Component {
                     </a>
                 </div>
                 <div class="col-lg co-host-col mb-4">
-                    <a href="https://unukalbar.ac.id/" target="_blank" class="text-decoration-none">
+                    <a href="https://unukase.ac.id/" target="_blank" class="text-decoration-none">
                         <div class="co-host-card">
                             <div class="co-host-logo">
                                 <img src="{{ asset('assets/ele/school/logo-unu.png') }}" alt="Universitas Nahdlatul Ulama" />
@@ -659,8 +659,8 @@ new #[Layout('layouts::english-education')] class extends Component {
                                     href="https://docs.google.com/document/d/19sNzldO1mLnLFhhC-V7Y9pUgEOPCyn0x/edit?usp=sharing&ouid=106853013310927853848&rtpof=true&sd=true"
                                     class="btn-primary-custom me-2 text-white">Full Paper Template</a>
                                 <a href="#" class="btn-primary-custom me-2 text-white">Presentation Template</a>
-                                <a href="https://bit.ly/1stGLOBE_2026" target="_blank"
-                                    class="btn btn-outline-custom">Submission Link</a>
+                                <a href="https://forms.gle/ksnsQnvfdwPSx6MM7" target="_blank"
+                                    class="btn btn-outline-custom">Full Paper Submission Link</a>
                             </div>
                         </div>
                     </div>
