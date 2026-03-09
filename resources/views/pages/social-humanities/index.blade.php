@@ -511,9 +511,9 @@ new #[Layout('layouts::social-humanities')] class extends Component {
                                 <a target="_blank"
                                     href="https://docs.google.com/document/d/19sNzldO1mLnLFhhC-V7Y9pUgEOPCyn0x/edit?usp=sharing&ouid=106853013310927853848&rtpof=true&sd=true"
                                     class="btn-primary-custom me-2 text-white">Full Paper Template</a>
-                                <a href="#" class="btn-primary-custom me-2 text-white">Presentation Template</a>
+                                {{-- <a href="#" class="btn-primary-custom me-2 text-white">Presentation Template</a>
                                 <a href="https://bit.ly/1stGLOBE_2026" target="_blank"
-                                    class="btn btn-outline-custom">Submission Link</a>
+                                    class="btn btn-outline-custom">Submission Link</a> --}}
                             </div>
                         </div>
                     </div>
